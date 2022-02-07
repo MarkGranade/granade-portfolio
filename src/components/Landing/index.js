@@ -61,7 +61,7 @@ function Landing() {
 							as={"span"}
 							position={"relative"}
 							_after={{
-								content: "''",
+								content: `""`,
 								width: "full",
 								height: "30%",
 								position: "absolute",

@@ -18,7 +18,9 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-function Nav() {
+function Nav(props) {
+	const { navSelected, setNavSelected } = props;
+
 	return (
 		<Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
 			<Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
@@ -33,7 +35,8 @@ function Nav() {
 								textDecoration: "none",
 								bg: useColorModeValue("gray.200", "gray.700"),
 							}}
-							href={"#"}
+							href={"#about"}
+							onClick={() => setNavSelected("About")}
 						>
 							About
 						</Link>
@@ -45,9 +48,10 @@ function Nav() {
 								textDecoration: "none",
 								bg: useColorModeValue("gray.200", "gray.700"),
 							}}
-							href={"#"}
+							href={"#Portfolio"}
+							onClick={() => setNavSelected("Portfolio")}
 						>
-							Projects
+							Portfolio
 						</Link>
 						<Link
 							px={2}
@@ -57,9 +61,23 @@ function Nav() {
 								textDecoration: "none",
 								bg: useColorModeValue("gray.200", "gray.700"),
 							}}
-							href={"#"}
+							href={"#resume"}
+							onClick={() => setNavSelected("Resume")}
 						>
 							Resume
+						</Link>
+						<Link
+							px={2}
+							py={1}
+							rounded={"md"}
+							_hover={{
+								textDecoration: "none",
+								bg: useColorModeValue("gray.200", "gray.700"),
+							}}
+							href={"#contact"}
+							onClick={() => setNavSelected("Contact")}
+						>
+							Contact
 						</Link>
 					</HStack>
 				</HStack>
