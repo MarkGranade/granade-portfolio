@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
-
 import {
 	Container,
 	Flex,
@@ -69,11 +68,11 @@ function ContactForm() {
 	}
 
 	return (
-		<Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
+		<Container maxW="full" mt={0} centerContent overflow="hidden">
 			<Flex>
 				<Box
-					bg="#02054B"
-					color="white"
+					bg="primary.300"
+					color="gray.500"
 					borderRadius="lg"
 					m={{ sm: 4, md: 16, lg: 10 }}
 					p={{ sm: 5, md: 5, lg: 16 }}
@@ -93,9 +92,12 @@ function ContactForm() {
 												height="48px"
 												width="200px"
 												variant="ghost"
-												color="#DCE2FF"
-												_hover={{ border: "2px solid #1C6FEB" }}
-												leftIcon={<MdPhone color="#1970F1" size="20px" />}
+												color="gray.500"
+												_hover={{
+													border: "2px solid",
+													borderColor: "secondary.200",
+												}}
+												leftIcon={<MdPhone color="#f787e5" size="20px" />}
 											>
 												+1-555-555-5555
 											</Button>
@@ -104,9 +106,12 @@ function ContactForm() {
 												height="48px"
 												width="200px"
 												variant="ghost"
-												color="#DCE2FF"
-												_hover={{ border: "2px solid #1C6FEB" }}
-												leftIcon={<MdEmail color="#1970F1" size="20px" />}
+												color="gray.500"
+												_hover={{
+													border: "2px solid",
+													borderColor: "secondary.200",
+												}}
+												leftIcon={<MdEmail color="#f787e5" size="20px" />}
 											>
 												mark.granade@gmail.com
 											</Button>
@@ -115,9 +120,12 @@ function ContactForm() {
 												height="48px"
 												width="200px"
 												variant="ghost"
-												color="#DCE2FF"
-												_hover={{ border: "2px solid #1C6FEB" }}
-												leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
+												color="gray.500"
+												_hover={{
+													border: "2px solid",
+													borderColor: "secondary.200",
+												}}
+												leftIcon={<MdLocationOn color="#f787e5" size="20px" />}
 											>
 												Long Valley, New Jersey
 											</Button>
@@ -134,7 +142,7 @@ function ContactForm() {
 											variant="ghost"
 											size="lg"
 											isRound={true}
-											_hover={{ bg: "#0D74FF" }}
+											_hover={{ bg: "secondary.200", color: "primary.300" }}
 											icon={<MdFacebook size="28px" />}
 										/>
 										<IconButton
@@ -142,7 +150,7 @@ function ContactForm() {
 											variant="ghost"
 											size="lg"
 											isRound={true}
-											_hover={{ bg: "#0D74FF" }}
+											_hover={{ bg: "secondary.200", color: "primary.300" }}
 											icon={<BsGithub size="28px" />}
 										/>
 										<IconButton
@@ -150,7 +158,7 @@ function ContactForm() {
 											variant="ghost"
 											size="lg"
 											isRound={true}
-											_hover={{ bg: "#0D74FF" }}
+											_hover={{ bg: "secondary.200", color: "primary.300" }}
 											icon={<BsDiscord size="28px" />}
 										/>
 									</HStack>

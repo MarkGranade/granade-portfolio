@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../Carousel";
+// import Carousel from "../Carousel";
 import {
 	Box,
 	Heading,
@@ -10,7 +10,6 @@ import {
 	Tag,
 	useColorModeValue,
 	Container,
-	VStack,
 } from "@chakra-ui/react";
 
 const goghBuy = require("../../assets/images/goghbuy.png");
@@ -20,7 +19,7 @@ const techBlog = require("../../assets/images/tech-blog.png");
 
 function ReactTag() {
 	return (
-		<Tag size={"md"} variant="solid" colorScheme="orange">
+		<Tag size={"md"} variant="solid" colorScheme="primary" color="gray.500">
 			React
 		</Tag>
 	);
@@ -28,7 +27,7 @@ function ReactTag() {
 
 function ChakraTag() {
 	return (
-		<Tag size={"md"} variant="solid" colorScheme="orange">
+		<Tag size={"md"} variant="solid" colorScheme="primary" color="gray.500">
 			Chakra-UI
 		</Tag>
 	);
@@ -37,7 +36,7 @@ function ChakraTag() {
 function Portfolio() {
 	return (
 		<Container maxW={"7xl"} p="12">
-			<Carousel />
+			{/* <Carousel /> */}
 			<Heading
 				as="h1"
 				textDecoration="underline"
@@ -80,8 +79,8 @@ function Portfolio() {
 					<Box zIndex="1" width="100%" position="absolute" height="100%">
 						<Box
 							bgGradient={useColorModeValue(
-								"radial(orange.600 1px, transparent 1px)",
-								"radial(orange.300 1px, transparent 1px)"
+								"radial(primary.600 1px, transparent 1px)",
+								"radial(primary.300 1px, transparent 1px)"
 							)}
 							backgroundSize="20px 20px"
 							opacity="0.4"
@@ -186,8 +185,8 @@ function Portfolio() {
 					<Box zIndex="1" width="100%" position="absolute" height="100%">
 						<Box
 							bgGradient={useColorModeValue(
-								"radial(orange.600 1px, transparent 1px)",
-								"radial(orange.300 1px, transparent 1px)"
+								"radial(primary.600 1px, transparent 1px)",
+								"radial(primary.300 1px, transparent 1px)"
 							)}
 							backgroundSize="20px 20px"
 							opacity="0.4"
@@ -233,8 +232,8 @@ function Portfolio() {
 					<Box zIndex="1" width="100%" position="absolute" height="100%">
 						<Box
 							bgGradient={useColorModeValue(
-								"radial(orange.600 1px, transparent 1px)",
-								"radial(orange.300 1px, transparent 1px)"
+								"radial(primary.600 1px, transparent 1px)",
+								"radial(primary.300 1px, transparent 1px)"
 							)}
 							backgroundSize="20px 20px"
 							opacity="0.4"
@@ -338,8 +337,8 @@ function Portfolio() {
 					<Box zIndex="1" width="100%" position="absolute" height="100%">
 						<Box
 							bgGradient={useColorModeValue(
-								"radial(orange.600 1px, transparent 1px)",
-								"radial(orange.300 1px, transparent 1px)"
+								"radial(primary.600 1px, transparent 1px)",
+								"radial(primary.300 1px, transparent 1px)"
 							)}
 							backgroundSize="20px 20px"
 							opacity="0.4"

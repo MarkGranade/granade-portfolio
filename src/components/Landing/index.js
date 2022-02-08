@@ -67,14 +67,14 @@ function Landing() {
 								position: "absolute",
 								bottom: 1,
 								left: 0,
-								bg: "red.400",
+								bg: "primary.400",
 								zIndex: -1,
 							}}
 						>
 							Mark Granade:
 						</Text>
 						<br />
-						<Text as={"span"} color={"red.400"}>
+						<Text as={"span"} color={"primary.500"}>
 							Full-Stack Web Developer!
 						</Text>
 					</Heading>
@@ -89,9 +89,10 @@ function Landing() {
 							size={"lg"}
 							fontWeight={"normal"}
 							px={6}
-							colorScheme={"red"}
-							bg={"red.400"}
-							_hover={{ bg: "red.500" }}
+							colorScheme={"primary"}
+							bg={"primary.400"}
+							color="black"
+							_hover={{ bg: "primary.500" }}
 						>
 							View my Portfolio
 						</Button>

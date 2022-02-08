@@ -1,28 +1,12 @@
 import React from "react";
-import {
-	Box,
-	Flex,
-	Avatar,
-	HStack,
-	Link,
-	IconButton,
-	Button,
-	Menu,
-	MenuButton,
-	MenuList,
-	MenuItem,
-	MenuDivider,
-	useDisclosure,
-	useColorModeValue,
-	Stack,
-} from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Box, Flex, HStack, Link, useColorModeValue } from "@chakra-ui/react";
+// import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 function Nav(props) {
 	const { navSelected, setNavSelected } = props;
 
 	return (
-		<Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+		<Box bg={useColorModeValue("primary.200")} px={4}>
 			<Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
 				<HStack spacing={8} alignItems={"center"}>
 					<Box>Mark Granade</Box>
