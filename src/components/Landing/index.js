@@ -43,7 +43,7 @@ function Landing() {
 					>
 						<Image
 							alt={"Mark Granade"}
-							fit={"cover"}
+							// fit={"cover"}
 							align={"center"}
 							w={"100%"}
 							h={"100%"}

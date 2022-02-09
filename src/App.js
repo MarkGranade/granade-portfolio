@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 import "./App.css";
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
+import SideBar from "./components/SideBar";
 import Landing from "./components/Landing";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import ContactForm from "./components/Contact";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
 // import theme from "./theme/index.js";
 
 const theme = extendTheme({
@@ -60,6 +65,13 @@ const theme = extendTheme({
 	},
 });
 
+// Jazz Cup Palette
+// "#83DDE0"
+// "#28ADA8"
+// "#3F86BC"
+// "#7A3A9A"
+// "#392682"
+
 function App() {
 	const [navSelected, setNavSelected] = useState("About");
 
@@ -68,16 +80,23 @@ function App() {
 			return <Landing />;
 		} else if (page === "Portfolio") {
 			return <Portfolio />;
-		} else if (page === "Resume") {
-			return <Resume />;
+		} else if (page === "Experience") {
+			return <Experience />;
+		} else if (page === "Skills") {
+			return <Skills />;
+		} else if (page === "Education") {
+			return <Education />;
 		} else if (page === "Contact") {
 			return <ContactForm />;
+		} else if (page === "Resume") {
+			return <Resume />;
 		}
 	}
 
 	return (
 		<ChakraProvider theme={theme}>
-			<Nav navSelected={navSelected} setNavSelected={setNavSelected} />
+			{/* <Nav navSelected={navSelected} setNavSelected={setNavSelected} /> */}
+			<SideBar navSelected={navSelected} setNavSelected={setNavSelected} />
 
 			<main>{switchPage(navSelected)}</main>
 			{/* <Landing /> */}
