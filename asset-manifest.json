@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/granade-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/granade-portfolio/static/js/main.85d66991.js",
+    "main.js": "/granade-portfolio/static/js/main.191c4724.js",
     "static/js/787.123ae13f.chunk.js": "/granade-portfolio/static/js/787.123ae13f.chunk.js",
     "static/media/space-rpg.png": "/granade-portfolio/static/media/space-rpg.7d541ada1046a4353627.png",
     "static/media/goghbuy.png": "/granade-portfolio/static/media/goghbuy.1d80fa80a983b8af1967.png",
@@ -10,11 +10,11 @@
     "static/media/note-taker.png": "/granade-portfolio/static/media/note-taker.b4e0a4187e4485ce229a.png",
     "index.html": "/granade-portfolio/index.html",
     "main.073c9b0a.css.map": "/granade-portfolio/static/css/main.073c9b0a.css.map",
-    "main.85d66991.js.map": "/granade-portfolio/static/js/main.85d66991.js.map",
+    "main.191c4724.js.map": "/granade-portfolio/static/js/main.191c4724.js.map",
     "787.123ae13f.chunk.js.map": "/granade-portfolio/static/js/787.123ae13f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.85d66991.js"
+    "static/js/main.191c4724.js"
   ]
 }
