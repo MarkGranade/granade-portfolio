@@ -33,14 +33,41 @@ function ChakraTag() {
 	);
 }
 
+function JsTag() {
+	return (
+		<Tag size={"md"} variant="solid" colorScheme="primary" color="gray.500">
+			JavaScript
+		</Tag>
+	);
+}
+
+function GraphQlTag() {
+	return (
+		<Tag size={"md"} variant="solid" colorScheme="primary" color="gray.500">
+			GraphQL
+		</Tag>
+	);
+}
+
+function MongoTag() {
+	return (
+		<Tag size={"md"} variant="solid" colorScheme="primary" color="gray.500">
+			MongoDB
+		</Tag>
+	);
+}
+
 function Portfolio() {
 	return (
-		<Container maxW={"7xl"} p="12">
+		<Container bg="secondary.50" maxW={"7xl"} p="12" className="intro">
 			{/* <Carousel /> */}
 			<Heading
 				as="h1"
 				textDecoration="underline"
 				textDecorationColor="gray.400"
+				backgroundColor="primary.200"
+				w="100%"
+				height="50"
 			>
 				Projects
 			</Heading>
@@ -98,7 +125,8 @@ function Portfolio() {
 				>
 					<HStack spacing="2">
 						<ReactTag />
-						<ChakraTag />
+						<JsTag />
+						<GraphQlTag />
 					</HStack>
 					<Heading marginTop="1">
 						<Link textDecoration="none" _hover={{ textDecoration: "none" }}>

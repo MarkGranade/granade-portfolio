@@ -63,6 +63,7 @@ function SideBar(props) {
 						display={{ base: "none", md: "flex" }}
 					>
 						<Button
+							bg="secondary.50"
 							as={"Link"}
 							px={2}
 							py={1}
@@ -80,6 +81,7 @@ function SideBar(props) {
 						</Button>
 
 						<Button
+							bg="secondary.50"
 							as={"Link"}
 							px={2}
 							py={1}
@@ -96,7 +98,7 @@ function SideBar(props) {
 							Projects
 						</Button>
 
-						<Button
+						{/* <Button
 							as={"Link"}
 							px={2}
 							py={1}
@@ -111,9 +113,10 @@ function SideBar(props) {
 						>
 							<FiCompass />
 							Experience
-						</Button>
+						</Button> */}
 
 						<Button
+							bg="secondary.50"
 							as={"Link"}
 							px={2}
 							py={1}
@@ -131,6 +134,7 @@ function SideBar(props) {
 						</Button>
 
 						<Button
+							bg="secondary.50"
 							as={"Link"}
 							px={2}
 							py={1}
@@ -148,6 +152,7 @@ function SideBar(props) {
 						</Button>
 
 						<Button
+							bg="secondary.50"
 							as={"Link"}
 							px={2}
 							py={1}
@@ -165,6 +170,7 @@ function SideBar(props) {
 						</Button>
 
 						<Button
+							bg="secondary.50"
 							as={"Link"}
 							px={2}
 							py={1}

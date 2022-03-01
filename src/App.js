@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import { Box } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
+import { Box, Container } from "@chakra-ui/react";
 import "./App.css";
 // import Nav from "./components/Nav";
 import SideBar from "./components/SideBar";
@@ -13,6 +12,8 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 // import theme from "./theme/index.js";
+
+const background = require("./assets/images/90s-background.jpg");
 
 const theme = extendTheme({
 	colors: {
@@ -80,8 +81,6 @@ function App() {
 			return <Landing />;
 		} else if (page === "Portfolio") {
 			return <Portfolio />;
-		} else if (page === "Experience") {
-			return <Experience />;
 		} else if (page === "Skills") {
 			return <Skills />;
 		} else if (page === "Education") {
@@ -95,13 +94,31 @@ function App() {
 
 	return (
 		<ChakraProvider theme={theme}>
-			{/* <Nav navSelected={navSelected} setNavSelected={setNavSelected} /> */}
 			<SideBar navSelected={navSelected} setNavSelected={setNavSelected} />
+			<Container maxW="container.xg" bgImage={background}>
+				<main>{switchPage(navSelected)}</main>
+			</Container>
 
-			<main>{switchPage(navSelected)}</main>
-			{/* <Landing /> */}
-			{/* <Carousel /> */}
-			{/* <ContactForm /> */}
+			{/* <Box border="2px solid" borderColor="red">
+				<Box height="100vh">
+					<Landing />
+				</Box>
+				<Box height="100vh">
+					<Portfolio />
+				</Box>
+				<Box height="100vh">
+					<Experience />
+				</Box>
+				<Box height="100vh">
+					<Skills />
+				</Box>
+				<Box height="100vh">
+					<Education />
+				</Box>
+				<Box height="100vh">
+					<ContactForm />
+				</Box>
+			</Box> */}
 		</ChakraProvider>
 	);
 }
