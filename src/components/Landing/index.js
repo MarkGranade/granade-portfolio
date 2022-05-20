@@ -97,7 +97,7 @@ function Landing() {
 										as={"span"}
 										color={"primary.500"}
 										fontWeight="bold"
-										textShadow="1px 1px black"
+										textShadow="1px 1px #d716b6"
 									>
 										Full-Stack Web Developer!
 									</Text>

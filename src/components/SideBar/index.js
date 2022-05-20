@@ -62,6 +62,8 @@ function SideBar(props) {
 						align="flex-start"
 						display={{ base: "none", md: "flex" }}
 					>
+						{/* ABOUT */}
+
 						<Button
 							bg="secondary.50"
 							as={"Link"}
@@ -79,6 +81,8 @@ function SideBar(props) {
 							<FiHome />
 							<Text ml="3">About</Text>
 						</Button>
+
+						{/* PORTFOLIO */}
 
 						<Button
 							bg="secondary.50"
@@ -98,6 +102,8 @@ function SideBar(props) {
 							Projects
 						</Button>
 
+						{/* EXPERIENCE */}
+
 						{/* <Button
 							as={"Link"}
 							px={2}
@@ -115,7 +121,9 @@ function SideBar(props) {
 							Experience
 						</Button> */}
 
-						<Button
+						{/* SKILLS */}
+
+						{/* <Button
 							bg="secondary.50"
 							as={"Link"}
 							px={2}
@@ -131,9 +139,11 @@ function SideBar(props) {
 						>
 							<FiStar />
 							Skills
-						</Button>
+						</Button> */}
 
-						<Button
+						{/* EDUCATION */}
+
+						{/* <Button
 							bg="secondary.50"
 							as={"Link"}
 							px={2}
@@ -149,7 +159,9 @@ function SideBar(props) {
 						>
 							<FiSettings />
 							Education
-						</Button>
+						</Button> */}
+
+						{/* CONTACT */}
 
 						<Button
 							bg="secondary.50"
@@ -169,7 +181,9 @@ function SideBar(props) {
 							Contact
 						</Button>
 
-						<Button
+						{/* RESUME */}
+
+						{/* <Button
 							bg="secondary.50"
 							as={"Link"}
 							px={2}
@@ -185,7 +199,7 @@ function SideBar(props) {
 						>
 							<FiMenu />
 							Resume
-						</Button>
+						</Button> */}
 					</VStack>
 				</VStack>
 			</Flex>

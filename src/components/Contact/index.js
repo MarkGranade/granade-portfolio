@@ -26,7 +26,7 @@ import {
 	MdFacebook,
 	MdOutlineEmail,
 } from "react-icons/md";
-import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
+import { BsGithub, BsDiscord, BsPerson, BsLinkedin } from "react-icons/bs";
 
 function ContactForm() {
 	const [formState, setFormState] = useState({
@@ -137,30 +137,35 @@ function ContactForm() {
 										px={5}
 										alignItems="flex-start"
 									>
-										<IconButton
-											aria-label="facebook"
-											variant="ghost"
-											size="lg"
-											isRound={true}
-											_hover={{ bg: "secondary.200", color: "primary.300" }}
-											icon={<MdFacebook size="28px" />}
-										/>
-										<IconButton
-											aria-label="github"
-											variant="ghost"
-											size="lg"
-											isRound={true}
-											_hover={{ bg: "secondary.200", color: "primary.300" }}
-											icon={<BsGithub size="28px" />}
-										/>
-										<IconButton
+										<a href="https://www.linkedin.com/in/mark-granade/">
+											<IconButton
+												aria-label="linkedin"
+												variant="ghost"
+												size="lg"
+												isRound={true}
+												_hover={{ bg: "secondary.200", color: "primary.300" }}
+												icon={<BsLinkedin size="28px" />}
+											/>
+										</a>
+										<a href="https://github.com/MarkGranade">
+											<IconButton
+												aria-label="github"
+												variant="ghost"
+												size="lg"
+												isRound={true}
+												_hover={{ bg: "secondary.200", color: "primary.300" }}
+												icon={<BsGithub size="28px" />}
+											/>
+										</a>
+
+										{/* <IconButton
 											aria-label="discord"
 											variant="ghost"
 											size="lg"
 											isRound={true}
 											_hover={{ bg: "secondary.200", color: "primary.300" }}
 											icon={<BsDiscord size="28px" />}
-										/>
+										/> */}
 									</HStack>
 								</Box>
 							</WrapItem>
@@ -200,7 +205,7 @@ function ContactForm() {
 												<Button
 													variant="solid"
 													bg="#0D74FF"
-													bg="white"
+													bg="secondary.100"
 													_hover={{}}
 												>
 													Send Message

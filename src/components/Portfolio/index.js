@@ -124,9 +124,9 @@ function Portfolio() {
 					marginTop={{ base: "3", sm: "0" }}
 				>
 					<HStack spacing="2">
-						<ReactTag />
-						<JsTag />
-						<GraphQlTag />
+						{/* <ReactTag /> */}
+						{/* <JsTag /> */}
+						{/* <GraphQlTag /> */}
 					</HStack>
 					<Heading marginTop="1">
 						<Link textDecoration="none" _hover={{ textDecoration: "none" }}>
@@ -150,7 +150,7 @@ function Portfolio() {
 
 			{/* ==================================================================================================== */}
 			{/* SPACE RPG */}
-			<Box
+			{/* <Box
 				marginTop={{ base: "1", sm: "5" }}
 				display="flex"
 				flexDirection={{ base: "column", sm: "row" }}
@@ -222,7 +222,7 @@ function Portfolio() {
 						/>
 					</Box>
 				</Box>
-			</Box>
+			</Box> */}
 
 			{/* ==================================================================================================== */}
 			{/* NOTE TAKER */}
@@ -278,8 +278,8 @@ function Portfolio() {
 					marginTop={{ base: "3", sm: "0" }}
 				>
 					<HStack spacing="2">
-						<ReactTag />
-						<ChakraTag />
+						{/* <ReactTag /> */}
+						{/* <ChakraTag /> */}
 					</HStack>
 					<Heading marginTop="1">
 						<Link textDecoration="none" _hover={{ textDecoration: "none" }}>
@@ -292,10 +292,8 @@ function Portfolio() {
 						color={useColorModeValue("gray.700", "gray.200")}
 						fontSize="lg"
 					>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-						perspiciatis alias quos at esse sed consequuntur possimus placeat,
-						illum quo similique non eum quas voluptatibus itaque? Iure deleniti
-						fugit debitis!
+						Note Taker is a personal note taking app that allows the user to
+						save and organize thought into separately accessible notes.
 					</Text>
 				</Box>
 			</Box>
@@ -319,8 +317,8 @@ function Portfolio() {
 					marginTop={{ base: "3", sm: "0" }}
 				>
 					<HStack spacing="2">
-						<ReactTag />
-						<ChakraTag />
+						{/* <ReactTag /> */}
+						{/* <ChakraTag /> */}
 					</HStack>
 					<Heading marginTop="1">
 						<Link textDecoration="none" _hover={{ textDecoration: "none" }}>
@@ -333,10 +331,9 @@ function Portfolio() {
 						color={useColorModeValue("gray.700", "gray.200")}
 						fontSize="lg"
 					>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-						perspiciatis alias quos at esse sed consequuntur possimus placeat,
-						illum quo similique non eum quas voluptatibus itaque? Iure deleniti
-						fugit debitis!
+						Tech Blog is a a blog that follows the MVC paradigm. It allows users
+						to create an account, create posts, comment, and vote on individual
+						posts.
 					</Text>
 				</Box>
 

@@ -81,8 +81,6 @@ function App() {
 			return <Landing />;
 		} else if (page === "Portfolio") {
 			return <Portfolio />;
-		} else if (page === "Skills") {
-			return <Skills />;
 		} else if (page === "Education") {
 			return <Education />;
 		} else if (page === "Contact") {
@@ -96,7 +94,12 @@ function App() {
 		<ChakraProvider theme={theme}>
 			<SideBar navSelected={navSelected} setNavSelected={setNavSelected} />
 			<Container maxW="container.xg" bgImage={background}>
-				<main>{switchPage(navSelected)}</main>
+				{/* <main>{switchPage(navSelected)}</main> */}
+				<Landing />
+				<Portfolio />
+				{/* <Education /> */}
+				{/* <Resume /> */}
+				<ContactForm />
 			</Container>
 
 			{/* <Box border="2px solid" borderColor="red">
